@@ -1,15 +1,44 @@
-proxy-providers:
-  jichang-dingyue1:   #名称，默认即可
-    type: http
-    url: "your-jichangdingyue-url"  ###此处必填，url里面填入你的机场订阅链接，一般订阅链接加密了，需要转换为直链(https://acl4ssr-sub.github.io/)
-    interval: 3600
-    path: ./jichang1.yaml   #机场订阅文件下载后的文件名及文件地址，默认即可
-    health-check:
-      enable: true
-      interval: 600
-      url: https://www.gstatic.com/generate_204
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
 proxies:
-- {name: QQ-123, server: 132.145.81.116, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+- name: "QQ-123"
+  type: vless
+  server: 132.145.81.116
+  port: 443
+  uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d
+  udp: true
+  tls: true
+  network: ws
+  servername: 0806.raindew.eu.org # priority over wss host
+  # skip-cert-verify: true
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: 0806.raindew.eu.org
 - name: WARP
   type: wireguard
   server: engage.cloudflareclient.com
