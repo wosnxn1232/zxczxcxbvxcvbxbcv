@@ -1,0 +1,74 @@
+proxy-providers:
+  jichang-dingyue1:   #名称，默认即可
+    type: http
+    url: "https://api.v1.mk/sub?target=clash&url=vless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40132.145.81.116%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E9%259F%25A9%25E5%259B%25BD%25EF%25BC%2588%25E9%25A6%2596%25E5%25B0%2594Oracle%25E4%25BA%2591%25E8%25AE%25A1%25E7%25AE%2597%25E6%2595%25B0%25E6%258D%25AE%25E4%25B8%25AD%25E5%25BF%2583%25EF%25BC%2589%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40132.145.81.224%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E9%259F%25A9%25E5%259B%25BD%25EF%25BC%2588%25E9%25A6%2596%25E5%25B0%2594Oracle%25E4%25BA%2591%25E8%25AE%25A1%25E7%25AE%2597%25E6%2595%25B0%25E6%258D%25AE%25E4%25B8%25AD%25E5%25BF%2583%25EF%25BC%2589%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40131.186.20.197%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E7%25BE%258E%25E5%259B%25BD%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40140.238.23.30%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E9%259F%25A9%25E5%259B%25BD%25EF%25BC%2588%25E9%25A6%2596%25E5%25B0%2594Oracle%25E4%25BA%2591%25E8%25AE%25A1%25E7%25AE%2597%25E6%2595%25B0%25E6%258D%25AE%25E4%25B8%25AD%25E5%25BF%2583%25EF%25BC%2589%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40132.145.89.90%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E9%259F%25A9%25E5%259B%25BD%25EF%25BC%2588%25E9%25A6%2596%25E5%25B0%2594Oracle%25E4%25BA%2591%25E8%25AE%25A1%25E7%25AE%2597%25E6%2595%25B0%25E6%258D%25AE%25E4%25B8%25AD%25E5%25BF%2583%25EF%25BC%2589%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40129.154.215.81%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%2520%25E6%25BE%25B3%25E5%25A4%25A7%25E5%2588%25A9%25E4%25BA%259A%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40132.145.92.8%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E9%259F%25A9%25E5%259B%25BD%25EF%25BC%2588%25E9%25A6%2596%25E5%25B0%2594Oracle%25E4%25BA%2591%25E8%25AE%25A1%25E7%25AE%2597%25E6%2595%25B0%25E6%258D%25AE%25E4%25B8%25AD%25E5%25BF%2583%25EF%25BC%2589%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40138.2.72.233%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%25E7%25BE%258E%25E5%259B%25BD%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40132.226.169.90%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%2520%25E8%258D%25B7%25E5%2585%25B0%7Cvless%3A%2F%2F342ba7d2-fe2b-495c-b34d-29b71947791d%40129.154.192.165%3A443%3Fencryption%3Dnone%26security%3Dtls%26sni%3D0806.raindew.eu.org%26fp%3Drandomized%26type%3Dws%26host%3D0806.raindew.eu.org%26path%3D%252F%253Fed%253D2048%23%2520%25E6%25BE%25B3%25E5%25A4%25A7%25E5%2588%25A9%25E4%25BA%259A%7C&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true"  ###此处必填，url里面填入你的机场订阅链接，一般订阅链接加密了，需要转换为直链(https://acl4ssr-sub.github.io/)
+    interval: 3600
+    path: ./jichang1.yaml   #机场订阅文件下载后的文件名及文件地址，默认即可
+    health-check:
+      enable: true
+      interval: 600
+      url: https://www.gstatic.com/generate_204
+
+proxies:
+  - name: WARP
+    type: wireguard
+    server: engage.cloudflareclient.com
+    port: 2408
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:8a8e:8d5:d628:cbe6:e0a3
+    private-key: mBI+MAoGgZFnufpljp9k9p74dbfF4bgR81mCctn6XUI=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    udp: true
+    reserved: [0,0,0]
+    remote-dns-resolve: true  
+    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dialer-proxy: "前置节点"
+
+proxy-groups:
+  # 这个名字为前置节点的策略组可以选择是用自建节点还是机场节点作为前置节点
+
+  - name: 节点选择
+    type: select
+    proxies:
+      - WARP        #给机场套warp之后的节点     
+      - 机场负载均衡  #机场节点的负载均衡，下同
+      - 机场自动选择    
+      - 机场手动选择
+  - name: 前置节点
+    type: select
+    proxies:  
+      - 机场负载均衡  #机场节点的负载均衡，下同
+      - 机场自动选择    
+      - 机场手动选择
+  - name: 机场负载均衡
+    type: load-balance #负载均衡
+    use:
+      - jichang-dingyue1
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    #lazy: true
+    #disable-udp: true
+    strategy: round-robin #作为前置节点⽤这个⽐较好
+
+  - name: 机场自动选择
+    type: url-test #选出延迟最低的机场节点
+    use:
+      - jichang-dingyue1    #proxy-providers中的名字，默认即可
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    tolerance: 50
+
+  - name: 机场手动选择
+    type: select #手动选择
+    use:
+      - jichang-dingyue1
+
+rules:
+    # 国内简单分流
+    - GEOSITE,google,节点选择
+    - GEOSITE,cn,DIRECT
+    - GEOIP,CN,DIRECT
+    - GEOIP,LAN,DIRECT
+    - GEOIP,lan,DIRECT,no-resolve
+    # 默认规则
+    - MATCH,节点选择
