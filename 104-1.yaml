@@ -1,7 +1,7 @@
 proxy-providers:
   jichang-dingyue1:   #名称，默认即可
     type: http
-    url: "your-jichangdingyue-url"  ###此处必填，url里面填入你的机场订阅链接，一般订阅链接加密了，需要转换为直链(https://acl4ssr-sub.github.io/)
+    url: "https://github.com/wosnxn1232/zxczxcxbvxcvbxbcv/raw/main/fsfdsdf.txt"  ###此处必填，url里面填入你的机场订阅链接，一般订阅链接加密了，需要转换为直链(https://acl4ssr-sub.github.io/)
     interval: 3600
     path: ./jichang1.yaml   #机场订阅文件下载后的文件名及文件地址，默认即可
     health-check:
