@@ -12,16 +12,20 @@ proxy-providers:
 proxies:
 ###你的自建节点都在 proxies 里添加，这里我帖的一个socks5默认配置
 #你可以替换为你自建的trojan vmess vless tuic等，格式参考官网：https://clash-meta.wiki/config/proxies/vless/
-  - {name: 🇰🇷 韩国（首尔Oracle云计算数据中心）, server: 132.145.81.116, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇰🇷 韩国（首尔Oracle云计算数据中心） 2, server: 132.145.81.224, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇺🇸 美国, server: 131.186.20.197, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇰🇷 韩国（首尔Oracle云计算数据中心） 3, server: 140.238.23.30, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇰🇷 韩国（首尔Oracle云计算数据中心） 4, server: 132.145.89.90, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇦🇺 澳大利亚, server: 129.154.215.81, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇰🇷 韩国（首尔Oracle云计算数据中心） 5, server: 132.145.92.8, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇺🇸 美国 2, server: 138.2.72.233, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇳🇱 荷兰, server: 132.226.169.90, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 🇦🇺 澳大利亚 2, server: 129.154.192.165, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+- name: "🇰🇷 韩国（首尔Oracle云计算数据中心）"
+  type: vless
+  server: 132.145.81.116
+  port: 443
+  uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d
+  udp: true
+  tls: true
+  network: ws
+  servername: 0806.raindew.eu.org # priority over wss host
+  # skip-cert-verify: true
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: 0806.raindew.eu.org
 
   - name: WARP
     type: wireguard
