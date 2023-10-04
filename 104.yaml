@@ -30,8 +30,8 @@ proxies:
   
   - name: WARP
     type: wireguard
-    server: engage.cloudflareclient.com
-    port: 2408
+    server: 188.114.98.5
+    port: 968
     ip: 172.16.0.2
     ipv6: 2606:4700:110:8a8e:8d5:d628:cbe6:e0a3
     private-key: mBI+MAoGgZFnufpljp9k9p74dbfF4bgR81mCctn6XUI=
@@ -43,6 +43,12 @@ proxies:
     dialer-proxy: "前置节点"
 
 proxy-groups:
+  - name: 前置节点
+    type: select
+    proxies:  
+      - 负载均衡  #机场节点的负载均衡，下同
+      - 自动选择    
+      - 手动选择
   - name: 节点选择
     type: select
     proxies:
