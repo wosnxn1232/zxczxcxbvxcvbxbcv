@@ -40,16 +40,22 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
+    dialer-proxy: "前置节点"
 
 proxy-groups:
-  - name: 节点选择
+  - name: 前置节点
     type: select
     proxies:  
       - 负载均衡  #机场节点的负载均衡，下同
       - 自动选择    
       - 手动选择
-      - WARP
+  - name: 节点选择
+    type: select
+    proxies:
+      - WARP        #套warp之后的节点    
+      - 负载均衡  #机场节点的负载均衡，下同
+      - 自动选择    
+      - 手动选择
       - DIRECT
   - name: 负载均衡
     type: load-balance #负载均衡
