@@ -43,12 +43,6 @@ proxies:
     dialer-proxy: "前置节点"
 
 proxy-groups:
-  - name: 前置节点
-    type: select
-    proxies:  
-      - 负载均衡  #机场节点的负载均衡，下同
-      - 自动选择    
-      - 手动选择
   - name: 节点选择
     type: select
     proxies:
