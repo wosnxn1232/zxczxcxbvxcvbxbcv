@@ -1,14 +1,19 @@
-proxy-providers:
-  jichang-dingyue1:   #名称，默认即可
-    type: http
-    url: "your-jichangdingyue-url"  ###此处必填，url里面填入你的机场订阅链接，一般订阅链接加密了，需要转换为直链(https://acl4ssr-sub.github.io/)
-    interval: 3600
-    path: ./jichang1.yaml   #机场订阅文件下载后的文件名及文件地址，默认即可
-    health-check:
-      enable: true
-      interval: 600
-      url: https://www.gstatic.com/generate_204
-
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
 proxies:
 ###你的自建节点都在 proxies 里添加，这里我帖的一个socks5默认配置
 #你可以替换为你自建的trojan vmess vless tuic等，格式参考官网：https://clash-meta.wiki/config/proxies/vless/
