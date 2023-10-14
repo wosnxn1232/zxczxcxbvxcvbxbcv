@@ -17,15 +17,15 @@ dns:
 proxies:
 ###你的自建节点都在 proxies 里添加，这里我帖的一个socks5默认配置
 #你可以替换为你自建的trojan vmess vless tuic等，格式参考官网：https://clash-meta.wiki/config/proxies/vless/
-  - {name: 电信联通-1, server: cdn.jsbang.top, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-2, server: cdn.didi8.com, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-3, server: opop.200307.xyz, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-4, server: cn.king361.link, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-5, server: go.mesad.1145114.me, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-6, server: 80.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 电信联通-7, server: 443.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 移动-1, server: cfip.gay, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
-  - {name: 移动-2, server: go.mesad.1145114.me, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 电信联通-1, server: 2052.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 电信联通-2, server: 80.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 电信联通-3, server: 443.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 电信联通-4, server: jp01.nttkk.com, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 电信联通-5, server: x.adorabletoad.tk, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 移动-1, server: 2052.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 移动-2, server: 80.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 移动-3, server: 443.cf.bestl.de, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
+  - {name: 移动-4, server: cfip.gay, port: 443, client-fingerprint: randomized, type: vless, uuid: 342ba7d2-fe2b-495c-b34d-29b71947791d, tls: true, tfo: false, servername: 0806.raindew.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 0806.raindew.eu.org}}}
   
   - name: WARP
     type: wireguard
@@ -58,10 +58,10 @@ proxy-groups:
       - 电信联通-3
       - 电信联通-4
       - 电信联通-5
-      - 电信联通-6
-      - 电信联通-7
       - 移动-1
       - 移动-2
+      - 移动-3
+      - 移动-4
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
@@ -76,10 +76,10 @@ proxy-groups:
       - 电信联通-3
       - 电信联通-4
       - 电信联通-5
-      - 电信联通-6
-      - 电信联通-7
       - 移动-1
       - 移动-2
+      - 移动-3
+      - 移动-4
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -92,10 +92,10 @@ proxy-groups:
       - 电信联通-3
       - 电信联通-4
       - 电信联通-5
-      - 电信联通-6
-      - 电信联通-7
       - 移动-1
       - 移动-2
+      - 移动-3
+      - 移动-4
 
 rules:
     # 国内简单分流
