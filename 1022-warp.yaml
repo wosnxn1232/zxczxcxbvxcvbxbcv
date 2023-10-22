@@ -17,136 +17,16 @@ dns:
 proxies:
 ###你的自建节点都在 proxies 里添加，这里我帖的一个socks5默认配置
 #你可以替换为你自建的trojan vmess vless tuic等，格式参考官网：https://clash-meta.wiki/config/proxies/vless/
-  - name: WARP-美国-1
-    type: wireguard
-    server: 162.159.195.31
-    port: 939
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-巴西-1
-    type: wireguard
-    server: 188.114.96.13
-    port: 4198
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-2
-    type: wireguard
-    server: 162.159.195.101
-    port: 894
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-3
-    type: wireguard
-    server: 162.159.195.21
-    port: 1701
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-4
-    type: wireguard
-    server: 162.159.195.91
-    port: 945
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-5
-    type: wireguard
-    server: 162.159.195.182
-    port: 2506
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-巴西-2
-    type: wireguard
-    server: 188.114.96.58
-    port: 2371
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-6
-    type: wireguard
-    server: 162.159.192.242
-    port: 894
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-美国-7
-    type: wireguard
-    server: 162.159.195.183
-    port: 7152
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
-    - name: WARP-巴西-3
-    type: wireguard
-    server: 188.114.97.205
-    port: 946
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
-    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "节点选择"
+  - {"name":"defaultName_1","type":"wireguard","server":"162.159.195.31","port":939,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_2","type":"wireguard","server":"188.114.96.13","port":4198,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_3","type":"wireguard","server":"162.159.195.101","port":894,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_4","type":"wireguard","server":"162.159.195.21","port":1701,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_5","type":"wireguard","server":"162.159.195.91","port":945,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_6","type":"wireguard","server":"162.159.195.182","port":2506,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_7","type":"wireguard","server":"188.114.96.58","port":2371,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_8","type":"wireguard","server":"162.159.192.242","port":894,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_9","type":"wireguard","server":"162.159.195.183","port":7152,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
+  - {"name":"defaultName_10","type":"wireguard","server":"188.114.97.205","port":946,"udp":true,"ip":"172.16.0.2","ipv6":"2606:4700:110:87cb:1b24:34fb:ed7c:612e","private-key":"oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=","public-key":"bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=","dns":["1.1.1.1","1.0.0.1"],"mtu":1280,"remote-dns-resolve":true}
 
 proxy-groups:
   - name: 节点选择
@@ -159,16 +39,16 @@ proxy-groups:
   - name: 负载均衡
     type: load-balance #负载均衡
     proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
@@ -178,16 +58,16 @@ proxy-groups:
   - name: 自动选择
     type: url-test #选出延迟最低的机场节点
     proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -195,16 +75,16 @@ proxy-groups:
   - name: 手动选择
     type: select #手动选择
     proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
+      - defaultName_1
+      - defaultName_2
+      - defaultName_3
+      - defaultName_4
+      - defaultName_5
+      - defaultName_6
+      - defaultName_7
+      - defaultName_8
+      - defaultName_9
+      - defaultName_10
 
 rules:
     # 国内简单分流
