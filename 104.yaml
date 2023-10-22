@@ -39,12 +39,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
     
     - name: WARP-巴西-1
     type: wireguard
@@ -58,12 +53,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-2
     type: wireguard
@@ -77,12 +67,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-3
     type: wireguard
@@ -96,12 +81,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-4
     type: wireguard
@@ -115,12 +95,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-5
     type: wireguard
@@ -134,12 +109,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-巴西-2
     type: wireguard
@@ -153,12 +123,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-6
     type: wireguard
@@ -172,12 +137,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-美国-7
     type: wireguard
@@ -191,12 +151,7 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
     - name: WARP-巴西-3
     type: wireguard
@@ -210,26 +165,15 @@ proxies:
     reserved: [0,0,0]
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "负载均衡"
-    dialer-proxy: "负载均衡-WARP"
-    dialer-proxy: "自动选择"
-    dialer-proxy: "自动选择-WARP"
-    dialer-proxy: "手动选择"
-    dialer-proxy: "手动选择-WARP"
+    dialer-proxy: "节点选择"
 
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 负载均衡  #机场节点的负载均衡，下同
-      - 负载均衡-WARP
-      - 负载均衡-WORKERSW
       - 自动选择
-      - 自动选择-WARP
-      - 自动选择-WORKERSW
       - 手动选择
-      - 手动选择-WARP
-      - 手动选择-WORKERSW
       - DIRECT
   - name: 负载均衡
     type: load-balance #负载均衡
@@ -307,101 +251,6 @@ proxy-groups:
       - WARP-美国-6
       - WARP-美国-7
       - WARP-巴西-3
-  - name: 负载均衡-WARP
-    type: load-balance #负载均衡
-    proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    #lazy: true
-    #disable-udp: true
-    strategy: round-robin #作为前置节点⽤这个⽐较好
-
-  - name: 自动选择-WARP
-    type: url-test #选出延迟最低的机场节点
-    proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-
-  - name: 手动选择-WARP
-    type: select #手动选择
-    proxies:
-      - WARP-美国-1
-      - WARP-巴西-1
-      - WARP-美国-2
-      - WARP-美国-3
-      - WARP-美国-4
-      - WARP-美国-5
-      - WARP-巴西-2
-      - WARP-美国-6
-      - WARP-美国-7
-      - WARP-巴西-3
-  - name: 负载均衡-WORKERSW
-    type: load-balance #负载均衡
-    proxies:
-      - 电信联通-1
-      - 电信联通-2
-      - 电信联通-3
-      - 电信联通-4
-      - 电信联通-5
-      - 移动-1
-      - 移动-2
-      - 移动-3
-      - 移动-4
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    #lazy: true
-    #disable-udp: true
-    strategy: round-robin #作为前置节点⽤这个⽐较好
-
-  - name: 自动选择-WORKERSW
-    type: url-test #选出延迟最低的机场节点
-    proxies:
-      - 电信联通-1
-      - 电信联通-2
-      - 电信联通-3
-      - 电信联通-4
-      - 电信联通-5
-      - 移动-1
-      - 移动-2
-      - 移动-3
-      - 移动-4
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    tolerance: 50
-
-  - name: 手动选择-WORKERSW
-    type: select #手动选择
-    proxies:
-      - 电信联通-1
-      - 电信联通-2
-      - 电信联通-3
-      - 电信联通-4
-      - 电信联通-5
-      - 移动-1
-      - 移动-2
-      - 移动-3
-      - 移动-4
 
 rules:
     # 国内简单分流
