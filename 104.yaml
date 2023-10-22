@@ -40,7 +40,19 @@ proxies:
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "节点选择"
-    
+        - name: WARP-美国-5
+    type: wireguard
+    server: 162.159.195.182
+    port: 2506
+    ip: 172.16.0.2
+    ipv6: 2606:4700:110:87cb:1b24:34fb:ed7c:612e
+    private-key: oIqRhw9FpL6dj4kLaQrgz+kVMxy/gfiE+1ahnNdLq0g=
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    udp: true
+    reserved: [0,0,0]
+    remote-dns-resolve: true  
+    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dialer-proxy: "节点选择"
 proxy-groups:
   - name: 节点选择
     type: select
@@ -62,6 +74,7 @@ proxy-groups:
       - 移动-3
       - 移动-4
       - WARP-美国-1
+      - WARP-美国-5
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     #lazy: true
@@ -81,6 +94,7 @@ proxy-groups:
       - 移动-3
       - 移动-4
       - WARP-美国-1
+      - WARP-美国-5
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
@@ -98,7 +112,7 @@ proxy-groups:
       - 移动-3
       - 移动-4
       - WARP-美国-1
-
+      - WARP-美国-5
 rules:
     # 国内简单分流
     - GEOSITE,google,节点选择
