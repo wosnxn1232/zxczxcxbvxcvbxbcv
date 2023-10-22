@@ -40,7 +40,7 @@ proxies:
     remote-dns-resolve: true  
     dns: [ 1.1.1.1, 8.8.8.8 ]
     dialer-proxy: "节点选择"
-        - name: WARP-美国-5
+  - name: WARP-美国-5
     type: wireguard
     server: 162.159.195.182
     port: 2506
